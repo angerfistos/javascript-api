@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="app.js" defer></script>
+    <title>Api wikipedia</title>
+</head>
+<body class="w-full mx-auto">
+    <div class="w-1/2 mx-auto p-4">
+        <h1 class="text-blue-500 text-center mb-4">Api wikipedia</h1>
+        <img src="./ressources/wiki-logo.png" alt="Wikipedia" class="block w-60 h-70 mx-auto mb-4">
+        <form action="api.php" method="post" class="bg-gray-200 w-max p-4 rounded-xl flex gap-4 mx-auto">
+            <input type="text" name="search" id="search" placeholder="Search" class="pl-2">
+            <button type="submit" class="w-max py-2 px-4 border shadow-xl bg-blue-500">Valider</button>
+        </form>
+        <div id="result"></div>
+    </div>
+</body>
+</html>
